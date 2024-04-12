@@ -6,7 +6,7 @@ import (
 	"os"
 	"slices"
 
-	"github.com/jcbhmr/go-hello-swig/greet"
+	greet "github.com/jcbhmr/go-hello-swig/src"
 )
 
 func init() {
