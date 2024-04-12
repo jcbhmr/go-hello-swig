@@ -1,0 +1,27 @@
+name: go run
+on:
+  push:
+    branches: ["main"]
+    paths-ignore:
+      - .gitignore
+      - README.md
+      - LICENSE
+      - .github/**
+      - "!.github/workflows/go-run.yml"
+  pull_request:
+    paths-ignore:
+      - .gitignore
+      - README.md
+      - LICENSE
+      - .github/**
+      - "!.github/workflows/go-run.yml"
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  go-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+      - run: go run .
