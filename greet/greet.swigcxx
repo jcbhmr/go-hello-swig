@@ -6,8 +6,6 @@
 
 %include <std_string.i>
 
-%{
+%inline %{
 #include "greet.hpp"
 %}
-
-%include "greet.hpp"
