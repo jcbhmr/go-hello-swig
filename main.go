@@ -6,7 +6,7 @@ import (
 	"os"
 	"slices"
 
-	greet "github.com/jcbhmr/go-hello-swig/src"
+	"github.com/jcbhmr/go-hello-swig/greet"
 )
 
 func init() {
@@ -19,7 +19,7 @@ func init() {
 func main() {
 	slog.Debug("greeting", "name", "Alan Turing")
 	greeting := greet.Greeting("Alan Turing")
-	slog.Info("greeting", "result", greeting)
+	log.Printf("greeting: %#+v\n", greeting)
 
 	slog.Debug("greet", "name", "Ada Lovelace")
 	greet.Greet("Ada Lovelace")

@@ -258,7 +258,7 @@ static void* Swig_malloc(int c) {
 extern "C" {
 #endif
 
-void _wrap_Swig_free_greet_a4c5ca6e44d08fcf(void *_swig_go_0) {
+void _wrap_Swig_free_greet_fd2ba44ba1a38df7(void *_swig_go_0) {
   void *arg1 = (void *) 0 ;
   
   arg1 = *(void **)&_swig_go_0; 
@@ -268,7 +268,7 @@ void _wrap_Swig_free_greet_a4c5ca6e44d08fcf(void *_swig_go_0) {
 }
 
 
-void *_wrap_Swig_malloc_greet_a4c5ca6e44d08fcf(intgo _swig_go_0) {
+void *_wrap_Swig_malloc_greet_fd2ba44ba1a38df7(intgo _swig_go_0) {
   int arg1 ;
   void *result = 0 ;
   void *_swig_go_result;
@@ -281,7 +281,7 @@ void *_wrap_Swig_malloc_greet_a4c5ca6e44d08fcf(intgo _swig_go_0) {
 }
 
 
-_gostring_ _wrap_greeting_greet_a4c5ca6e44d08fcf(_gostring_ _swig_go_0) {
+_gostring_ _wrap_greeting_greet_fd2ba44ba1a38df7(_gostring_ _swig_go_0) {
   std::string *arg1 = 0 ;
   std::string result;
   _gostring_ _swig_go_result;
@@ -297,7 +297,7 @@ _gostring_ _wrap_greeting_greet_a4c5ca6e44d08fcf(_gostring_ _swig_go_0) {
 }
 
 
-void _wrap_greet_greet_a4c5ca6e44d08fcf(_gostring_ _swig_go_0) {
+void _wrap_greet_greet_fd2ba44ba1a38df7(_gostring_ _swig_go_0) {
   std::string *arg1 = 0 ;
   
   

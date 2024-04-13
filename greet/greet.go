@@ -31,13 +31,13 @@ typedef struct { void* array; intgo len; intgo cap; } _goslice_;
 typedef _gostring_ swig_type_1;
 typedef _gostring_ swig_type_2;
 typedef _gostring_ swig_type_3;
-extern void _wrap_Swig_free_greet_a4c5ca6e44d08fcf(uintptr_t arg1);
-extern uintptr_t _wrap_Swig_malloc_greet_a4c5ca6e44d08fcf(swig_intgo arg1);
+extern void _wrap_Swig_free_greet_fd2ba44ba1a38df7(uintptr_t arg1);
+extern uintptr_t _wrap_Swig_malloc_greet_fd2ba44ba1a38df7(swig_intgo arg1);
 
-#cgo CXXFLAGS: -I../include
+#cgo CXXFLAGS: -Iinclude -Ideps/fmt/include
 
-extern swig_type_1 _wrap_greeting_greet_a4c5ca6e44d08fcf(swig_type_2 arg1);
-extern void _wrap_greet_greet_a4c5ca6e44d08fcf(swig_type_3 arg1);
+extern swig_type_1 _wrap_greeting_greet_fd2ba44ba1a38df7(swig_type_2 arg1);
+extern void _wrap_greet_greet_fd2ba44ba1a38df7(swig_type_3 arg1);
 #undef intgo
 */
 import "C"
@@ -72,20 +72,20 @@ func swigCopyString(s string) string {
 
 func Swig_free(arg1 uintptr) {
 	_swig_i_0 := arg1
-	C._wrap_Swig_free_greet_a4c5ca6e44d08fcf(C.uintptr_t(_swig_i_0))
+	C._wrap_Swig_free_greet_fd2ba44ba1a38df7(C.uintptr_t(_swig_i_0))
 }
 
 func Swig_malloc(arg1 int) (_swig_ret uintptr) {
 	var swig_r uintptr
 	_swig_i_0 := arg1
-	swig_r = (uintptr)(C._wrap_Swig_malloc_greet_a4c5ca6e44d08fcf(C.swig_intgo(_swig_i_0)))
+	swig_r = (uintptr)(C._wrap_Swig_malloc_greet_fd2ba44ba1a38df7(C.swig_intgo(_swig_i_0)))
 	return swig_r
 }
 
 func Greeting(arg1 string) (_swig_ret string) {
 	var swig_r string
 	_swig_i_0 := arg1
-	swig_r_p := C._wrap_greeting_greet_a4c5ca6e44d08fcf(*(*C.swig_type_2)(unsafe.Pointer(&_swig_i_0)))
+	swig_r_p := C._wrap_greeting_greet_fd2ba44ba1a38df7(*(*C.swig_type_2)(unsafe.Pointer(&_swig_i_0)))
 	swig_r = *(*string)(unsafe.Pointer(&swig_r_p))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
@@ -97,7 +97,7 @@ func Greeting(arg1 string) (_swig_ret string) {
 
 func Greet(arg1 string) {
 	_swig_i_0 := arg1
-	C._wrap_greet_greet_a4c5ca6e44d08fcf(*(*C.swig_type_3)(unsafe.Pointer(&_swig_i_0)))
+	C._wrap_greet_greet_fd2ba44ba1a38df7(*(*C.swig_type_3)(unsafe.Pointer(&_swig_i_0)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
