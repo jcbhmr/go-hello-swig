@@ -1,6 +1,7 @@
 package greet
 
 import (
+	_ "github.com/jcbhmr/go-hello-swig/greet/deps/fmt"
 	_ "github.com/jcbhmr/go-hello-swig/greet/src"
 )
 
